@@ -1,3 +1,49 @@
 /* Universal Styles */
 
-html
+html {
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  line-height: 1.4em;
+}
+
+/* Header */
+.header {
+  display: flex;
+  Background-color: white;
+  height: 64px;
+  width: 100%
+  border: solid black 2px;
+}
+
+.logo {
+  display: inline-flex;
+  padding-left: 24px;
+  border: solid black 2px;
+}
+  #colmar {
+    font-weight: bold;
+    text-align: center;
+  }
+  #academy {
+    color: gray;
+    text-align: center;
+  }
+.menu {
+  display: flex;
+  align-self: flex-end;
+  padding-right: 24px;
+  border: solid black 2px;
+}
+
+.menu li{
+  display: inline-flex;
+  justify-content: flex-end;
+  text-align: center;
+  margin-right: 24px;
+  border: solid black 2px;
+
+}
