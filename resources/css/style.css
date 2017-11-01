@@ -11,18 +11,27 @@ body {
 }
 
 /* Header */
-.header {
-  display: flex;
-  Background-color: white;
-  height: 64px;
-  width: 100%
-  border: solid black 2px;
-}
 
+header {
+  display: flex;
+  width: 100%;
+  height: 64px;
+  justify-content: space-between;
+
+  background-color: white;
+  border: solid black 1px;
+
+}
 .logo {
-  display: inline-flex;
-  padding-left: 24px;
-  border: solid black 2px;
+  display: flex;
+  margin: 16px 24px;
+  border: solid black 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.logo img {
+  height: 32px;
+  align-items: center;
 }
   #colmar {
     font-weight: bold;
@@ -34,16 +43,16 @@ body {
   }
 .menu {
   display: flex;
-  align-self: flex-end;
-  padding-right: 24px;
-  border: solid black 2px;
+  justify-content: flex-end;
+  margin: 16px;
+  border: solid black 1px;
 }
 
 .menu li{
   display: inline-flex;
-  justify-content: flex-end;
   text-align: center;
-  margin-right: 24px;
-  border: solid black 2px;
+  color: gray;
+  margin: 0px 8px;
+  border: solid black 1px;
 
 }
