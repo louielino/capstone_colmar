@@ -47,7 +47,7 @@ p {
   font-family: "Open Sans", serif;
 }
 
-/* To fix navigation appearance */
+/* For Tablet and small screens */
 @media only screen and (max-width: 780px) {
   body {
     font-size: 12px;
@@ -62,8 +62,8 @@ p {
   }
 }
 
-/* For Mobile and smaller Tablet screens */
-@media only screen and (max-width: 680px) {
+/* For Mobile */
+@media only screen and (max-width: 414px) {
 
   .desktop {
     display: none;
@@ -83,8 +83,11 @@ p {
 
 header {
   background-color: #5285a9;
-  height: 4rem;
-  width: auto;
+  position: fixed;
+    width: 100%;
+    height: 64px;
+    top: 0;
+    z-index: 3;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   display: flex;
@@ -131,7 +134,7 @@ header {
   display: inline-flex;
   flex-flow: row nowrap;
   justify-content: center;
-  padding-right: 1rem;
+  padding-right: 48px;
   align-items: flex-end;
 }
 
@@ -175,7 +178,7 @@ header {
 
 #banner {
   background-color: white;
-    width: auto;
+    width: 100%;
     display: flex;
     justify-content: center;
 
@@ -185,8 +188,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 1.5rem;
-  width: 60rem;
+  padding: 96px 24px 32px 0px;
+  width: 90%;
 }
 
 .banner-image {
@@ -295,21 +298,20 @@ header {
    align-items: flex-start;
    justify-content: flex-start;
    padding: 2rem 1.5rem;
-   width: 60rem;
+   width: 90%;
  }
 
 .left-main {
   width: 60%;
   color: #847A6E;
   overflow: hidden;
-  /*
   padding-right: 1.5rem;
-  */
 }
 
  .main-image img {
    width: 100%;
    height: auto;
+   padding-left: 12px;
  }
 
 .left-main h1 {
@@ -460,7 +462,7 @@ header {
   }
 }
 
- /* Learning Section */
+ /* Courses Section */
 
  #learning {
    background-color: white;
@@ -472,7 +474,7 @@ header {
  .learning-container {
    padding-top: 2rem;
    padding-bottom: 2rem;
-   width: 60rem;
+   width: 90%;
    height: auto;
  }
 
@@ -583,7 +585,7 @@ header {
 
  .thesis-container {
    padding: 2rem 1.5rem;
-   width: 60rem;
+   width: 1000%;
    height: auto;
    display: flex;
    flex-direction: column;
@@ -624,6 +626,7 @@ header {
  }
 
  .video-caption p {
+   font-family: "EB Garamond"
    line-height: 1.5rem;
    padding-top: .5rem;
 
