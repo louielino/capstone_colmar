@@ -1,28 +1,275 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="./resources/css/reset.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="shortcut icon" href="/colmar.ico" type="image/x-icon">
+    <link rel="icon" href="./resources/images/colmar.ico" type="image/x-icon">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="shortcut icon" href="images/ic-logo.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Noto+Sans:400,400i,700|Open+Sans:400,400i,700" rel="stylesheet">
     <title>Colmar Academy</title>
-    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
-    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="./fonts/font-awesome/css/font-awesome.min.css">
   </head>
   <body>
+
+    <!-- Header Section -->
     <header>
-      <div class=logo>
-          <img src="resources/images/ic-logo.svg">
-          <span id=colmar>Colmar</span> <span id=academy>Academy</span>
+      <div class="logo-container" role="presentation">
+        <div class="logo desktop">
+          <a href="#"><img src="./resources/images/ic-logo.svg" alt="Logo"></a>
+        </div>
+        <div class="name" role="presentation">
+          <h3 class="logo desktop"><span>COLMAR</span>ACADEMY</h3>
+        </div>
       </div>
-      <div class="menu">
-        <ul>
-          <li>On Campus</li>
-          <li>Online</li>
-          <li>For companies</li>
-          <li>Sign In</li>
+      <div class="nav-container" role="presentation">
+        <nav class="desktop">
+          <ul role="presentation">
+            <li><a href="#">On Campus</a></li>
+            <li><a href="#">Online</a></li>
+            <li><a href="#">For Companies</a></li>
+            <li><a href="#">Sign In</a></li>
+          </ul>
+        </nav>
+        <nav class="mobile">
+          <ul role="presentation">
+            <li><a href="#"><img src="./resources/images/ic-logo.svg" alt="Homepage"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-on-campus.svg" alt="On Campus"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-online.svg" alt="Online"></a></li>
+            <li><a href="#"><img src="./resources/images/ic-login.svg" alt="Login"></a></li>
+          </ul>
+        </nav>
+        </div>
+    </header>
+
+    <!-- Banner Section -->
+
+    <div id="banner">
+      <div class="banner-container" role="presentation">
+        <div class="banner-image" role="presentation">
+          <img src="./resources/images/banner.jpg" alt="students reading">
+        </div>
+        <div class="banner-content" role="presentation">
+          <div class="banner-title" role="presentation">
+            <h1>Learn something new everyday</h1>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+          </div>
+          <a href="#"><div class="banner-button" role="link">
+            <span>Start Here</span>
+          </div></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Section -->
+
+    <div id="main">
+      <div class="main-container" role="presentation">
+        <div class="left-main desktop" role="presentation">
+          <div class="main-image">
+            <img src="./resources/images/information-main.jpg" alt="student reading">
+          </div>
+          <div class="main-content" role="presentation">
+            <h1>It doesn't hurt to keep practicing</h1>
+            <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Eticam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            <p><span>Emanuel, Sr Strategist at Hiring.com</span></p>
+          </div>
+        </div>
+        <div class="right-main" role="presentation">
+          <div class="event-container">
+            <div class="event-image desktop first">
+              <img src="./resources/images/information-orientation.jpg" alt="students walking">
+            </div>
+            <div class="event-image-wide mobile">
+              <img src="./resources/images/information-orientation-mobile.jpg" alt="students walking">
+            </div>
+            <div class="event-content">
+              <h3>Orientation date</h3>
+              <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+              <p><span><a href="#">Read more</a></span></p>
+            </div>
+          </div>
+          <div class="event-container">
+            <div class="event-image desktop">
+              <img src="./resources/images/information-campus.jpg" alt="classroom">
+            </div>
+            <div class="event-image-wide mobile">
+              <img src="./resources/images/information-campus-mobile.jpg" alt="classroom">
+            </div>
+            <div class="event-content">
+              <h3>Our Campus</h3>
+              <p>Find which campus is close by you</p>
+              <p><span><a href="#">Read more</a></span></p>
+            </div>
+          </div>
+          <div class="event-container last" >
+            <div class="event-image desktop">
+              <img src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack">
+            </div>
+            <div class="event-image-wide mobile">
+              <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack">
+            </div>
+            <div class="event-content">
+              <h3>Special Guest Lecture</h3>
+              <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+              <p><span><a href="#">Read more</a></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Learning Section -->
+    <div id="learning">
+      <div class="learning-container" role="presentation">
+        <div class="learning-title" role="presentation">
+          <h1>Start Learning</h1>
+        </div>
+        <div class="courses">
+
+          <div class="course-box mobile-color" role="presentation">
+            <div class="course-image desktop">
+            <img src="./resources/images/course-software.jpg" alt="computers">
+            </div>
+
+            <div class="course-title" role="presentation">
+              <h3><a href="#">Software Engineering</a></h3>
+            </div>
+            <div class="course-content desktop">
+              <p>COURSES</p>
+              <p><span>Web Development, Mobile Development, iOT, APIs</span></p>
+            </div>
+
+          </div>
+
+          <div class="course-box mobile-color" role="presentation">
+            <div class="course-image desktop">
+            <img src="./resources/images/course-computer-art.jpg" alt="mobile phone">
+            </div>
+            <div class="course-title" role="presentation">
+              <h3><a href="#">Computer Art</a></h3>
+            </div>
+            <div class="course-content desktop">
+              <p>COURSES</p>
+              <p><span>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</span></p>
+            </div>
+          </div>
+
+          <div class="course-box mobile-color" role="presentation">
+            <div class="course-image desktop">
+            <img src="./resources/images/course-design.jpg" alt="photographer">
+            </div>
+            <div class="course-title" role="presentation">
+              <h3><a href="#">Design</a></h3>
+            </div>
+            <div class="course-content desktop">
+              <p>COURSES</p>
+              <p><span>User Experience Design, User Research, Visual Design</span></p>
+            </div>
+          </div>
+
+          <div class="course-box mobile-color" role="presentation">
+            <div class="course-image desktop">
+            <img src="./resources/images/course-data.jpg" alt="laptop">
+            </div>
+            <div class="course-title" role="presentation">
+              <h3><a href="#">Data</a></h3>
+            </div>
+            <div class="course-content desktop">
+              <p>COURSES</p>
+              <p><span>Data Science, Big Data, SQL, Data Visualization</span></p>
+            </div>
+          </div>
+
+          <div class="course-box mobile-color" role="presentation">
+            <div class="course-image desktop">
+            <img src="./resources/images/course-business.jpg" alt="chessboard">
+            </div>
+            <div class="course-title" role="presentation">
+              <h3><a href="#">Business</a></h3>
+            </div>
+            <div class="course-content desktop">
+              <p>COURSES</p>
+              <p><span>Product Development, Business Development, Startup</span></p>
+            </div>
+          </div>
+
+          <div class="course-box mobile-color" role="presentation">
+            <div class="course-image desktop">
+            <img src="./resources/images/course-marketing.jpg" alt="smart watch">
+            </div>
+            <div class="course-title" role="presentation">
+              <h3><a href="#">Marketing</a></h3>
+            </div>
+            <div class="course-content desktop">
+              <p>COURSES</p>
+              <p><span>Analytics, Content Marketing, Mobile Marketing</span></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Thesis Section -->
+    <div id="thesis">
+      <div class="thesis-container" role="presentation">
+        <div class="thesis-title" role="presentation">
+          <h2>Thesis exhibits</h2>
+        </div>
+        <div class="thesis-content">
+        <div class="left-thesis" role="presentation">
+          <div class="video">
+            <video src="./resources/videos/thesis.mp4" autoplay poster="posterimage.jpg">
+            </video>
+            </div>
+            <div class="video-caption desktop">
+              <h3>Reimagine urban</h3>
+              <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Eticam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+            </div>
+        </div>
+        <div class="right-thesis desktop" role="presentation">
+          <div class="event-container">
+            <div class="event-image first">
+              <img src="./resources/images/thesis-fisma.jpg" alt="artist sketching">
+            </div>
+            <div class="event-content">
+              <h3><a href="#">Fisma: Design</a></h3>
+              <p>Designer showcase of new prototype product</p>
+            </div>
+          </div>
+
+          <div class="event-container last">
+            <div class="event-image">
+              <img src="./resources/images/thesis-now-and-then.jpg" alt="New York City">
+            </div>
+            <div class="event-content">
+              <h3><a href="#">Now and then</a></h3>
+              <p>Research study about New York</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container" role="presentation">
+      <div class="copyright">
+        <p>©Colmar Academy. All rights reserved</p>
+      </div>
+      <div class="privacy" role="presentation">
+        <ul class="desktop" role="presentation">
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
         </ul>
       </div>
-    </header>
+     </div>
+    </footer>
 
   </body>
 </html>
